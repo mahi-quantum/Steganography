@@ -1,0 +1,7 @@
+stegano #version 0.10.2 (On 24/03/2022)
+pillow #version 9.0.1 (On 24/03/2022) (Windows)
+
+ImageTk: (It comes pre-installed in Windows by installing pillow but in case of linux run following commands)
+
+Python 2 - sudo apt-get install python-imaging python-pil.imagetk
+Python 3 - sudo apt-get install python3-pil python3-pil.imagetk
