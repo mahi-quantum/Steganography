@@ -1,4 +1,4 @@
-# Python Steganography
+# Steganography
 
 Steganography is the art of concealing a secret message within (or even on top of) a non-secret object. That something can be anything you want it to be. Many forms of steganography nowadays involve hiding a secret piece of text within a photograph. Alternatively, you may hide a secret message or script inside a Word or Excel document. 
 
