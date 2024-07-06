@@ -15,7 +15,7 @@ root.configure(bg="#2f4155")
 
 def showimage():
     global filename
-    filename=filedialog.askopenfilename(initialdir=os.getcwd(), title='Chouse Image', filetype=(("PNG file","*.png"), ("JPG file","*.jpg"), ("All files","*.txt")))
+    filename=filedialog.askopenfilename(initialdir=os.getcwd(), title='Choose Image', filetype=(("PNG file","*.png"), ("JPG file","*.jpg"), ("All files","*.txt")))
     img=Image.open(filename)
     img=ImageTk.PhotoImage(img)
     lbl.configure(image=img,width=250,height=250)
