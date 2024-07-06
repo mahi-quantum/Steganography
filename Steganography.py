@@ -15,7 +15,7 @@ root.configure(bg="#2f4155")
 
 def showimage():
     global filename
-    filename=filedialog.askopenfilename(initialdir=os.getcwd(), title='Select Image File', filetype=(("PNG file","*.png"), ("JPG file","*.jpg"), ("All files","*.txt")))
+    filename=filedialog.askopenfilename(initialdir=os.getcwd(), title='Choose Image File', filetype=(("PNG file","*.png"), ("JPG file","*.jpg"), ("All files","*.txt")))
     img=Image.open(filename)
     img=ImageTk.PhotoImage(img)
     lbl.configure(image=img,width=250,height=250)
@@ -23,16 +23,16 @@ def showimage():
 
 def hidedata():
     global secret
-    message=text1.get(1.0,END)
-    secret = lsb.hide(str(filename), message)
+    secret_message=text1.get(1.0,END)
+    secret = lsb.hide(str(filename), secret_message)
 
 def saveimage():
     secret.save("hidden.png")
 
 def showdata():
-    clear_message = lsb.reveal(filename)
+    clear_messages = lsb.reveal(filename)
     text1.delete(1.0, END)
-    text1.insert(END, clear_message)
+    text1.insert(END, clear_messages)
 
 #icon
 image_icon=PhotoImage(file="logo.jpg")
